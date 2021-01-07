@@ -1,0 +1,27 @@
+description = "Popular Tours"
+==
+<div class="container container-custom margin_30_95">
+    <section class="add_bottom_45">
+        <div class="main_title_3">
+            <span><em></em></span>
+            <h2>Popular Tours</h2>
+        </div>
+        <div class="row">
+            {% for tour in records|slice(0, 6) %}
+                {% if tour.is_published == '1' %}
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <a href="/experiences/{{ tour.slug }}" class="grid_item">
+                            <figure>
+                                <img src="{% if tour.banner %}{{ tour.banner.path() }}{% else %}{{ 'assets/img/hotel_1.jpg'|theme }}{% endif %}" class="img-fluid" alt="" />
+                                <div class="info">
+                                    <div class="cat_star"><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i></div>
+                                    <h3>{{ tour.name }}</h3>
+                                </div>
+                            </figure>
+                        </a>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+</div>

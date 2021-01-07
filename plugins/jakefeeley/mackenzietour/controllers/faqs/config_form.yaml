@@ -1,0 +1,10 @@
+name: Faqs
+form: $/jakefeeley/mackenzietour/models/faq/fields.yaml
+modelClass: JakeFeeley\MackenzieTour\Models\Faq
+defaultRedirect: jakefeeley/mackenzietour/faqs
+create:
+    redirect: 'jakefeeley/mackenzietour/faqs/update/:id'
+    redirectClose: jakefeeley/mackenzietour/faqs
+update:
+    redirect: jakefeeley/mackenzietour/faqs
+    redirectClose: jakefeeley/mackenzietour/faqs

@@ -1,0 +1,29 @@
+1608730655a:1:{s:16:"global/cta-1.htm";a:6:{s:8:"fileName";s:16:"global/cta-1.htm";s:7:"content";s:619:"description = "Call to action 1"
+==
+<div class="call_section">
+    <div class="container clearfix">
+        <div class="col-lg-5 col-md-6 float-right wow" data-wow-offset="250">
+            <div class="block-reveal">
+                <div class="block-vertical"></div>
+                <div class="box_1">
+                    <h3>Register Now</h3>
+                    <p>Sign up to enter the play in the 5 qualifying events oveer the next few months.</p>
+                    <a href="/register" class="btn_1 rounded">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>";s:5:"mtime";i:1606386591;s:6:"markup";s:583:"<div class="call_section">
+    <div class="container clearfix">
+        <div class="col-lg-5 col-md-6 float-right wow" data-wow-offset="250">
+            <div class="block-reveal">
+                <div class="block-vertical"></div>
+                <div class="box_1">
+                    <h3>Register Now</h3>
+                    <p>Sign up to enter the play in the 5 qualifying events oveer the next few months.</p>
+                    <a href="/register" class="btn_1 rounded">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>";s:4:"code";N;s:11:"description";s:16:"Call to action 1";}}

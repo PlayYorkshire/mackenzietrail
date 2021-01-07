@@ -1,0 +1,23 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table jakefeeley_mackenzietour_faqs'
+    - builder_table_create_jakefeeley_mackenzietour_faqs.php
+1.0.3:
+    - 'Created table jakefeeley_mackenzietour_events'
+    - builder_table_create_jakefeeley_mackenzietour_events.php
+1.0.4:
+    - 'Updated table jakefeeley_mackenzietour_events'
+    - builder_table_update_jakefeeley_mackenzietour_events.php
+1.0.5:
+    - 'Updated table jakefeeley_mackenzietour_events'
+    - builder_table_update_jakefeeley_mackenzietour_events_2.php
+1.0.6:
+    - 'Created table jakefeeley_mackenzietour_posts'
+    - builder_table_create_jakefeeley_mackenzietour_posts.php
+1.0.7:
+    - 'Updated table jakefeeley_mackenzietour_events'
+    - builder_table_update_jakefeeley_mackenzietour_events_3.php
+1.0.8:
+    - 'Updated table jakefeeley_mackenzietour_events'
+    - builder_table_update_jakefeeley_mackenzietour_events_4.php

@@ -1,0 +1,15 @@
+1608730655a:1:{s:22:"global/courses-nav.htm";a:6:{s:8:"fileName";s:22:"global/courses-nav.htm";s:7:"content";s:363:"[builderList builderList2]
+modelClass = "JakeFeeley\MackenzieTour\Models\Event"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% for item in records %}
+    <li><a href="/course/{{ item.slug }}">{{ item.name }}</a></li>
+{% endfor %}";s:5:"mtime";i:1606477567;s:6:"markup";s:107:"{% for item in records %}
+    <li><a href="/course/{{ item.slug }}">{{ item.name }}</a></li>
+{% endfor %}";s:4:"code";N;s:24:"builderList builderList2";a:8:{s:10:"modelClass";s:37:"JakeFeeley\MackenzieTour\Models\Event";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:4:"name";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

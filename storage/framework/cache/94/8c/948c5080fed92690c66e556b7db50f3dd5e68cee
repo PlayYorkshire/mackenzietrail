@@ -1,0 +1,134 @@
+1608730655a:1:{s:17:"auth/register.htm";a:11:{s:8:"fileName";s:17:"auth/register.htm";s:7:"content";s:2201:"title = "Register"
+url = "/register"
+layout = "_auth-layout"
+is_hidden = 0
+
+[session]
+security = "all"
+
+[account]
+paramCode = "code"
+forceSecure = 0
+requirePassword = 0
+==
+{% if canRegister %}
+    <h3 class="mb-5">Register</h3>
+
+    {{ form_ajax('onRegister') }}
+
+        <div class="form-group">
+            <label for="registerName">Full Name</label>
+            <input
+                name="name"
+                type="text"
+                class="form-control"
+                id="registerName"
+                placeholder="Enter your full name" />
+            <i class="ti-user"></i>
+        </div>
+
+        <div class="form-group">
+            <label for="registerEmail">Email</label>
+            <input
+                name="email"
+                type="email"
+                class="form-control"
+                id="registerEmail"
+                placeholder="Enter your email" />
+            <i class="icon_mail_alt"></i>
+        </div>
+
+        {% if loginAttribute == "username" %}
+            <div class="form-group">
+                <label for="registerUsername">Username</label>
+                <input
+                    name="username"
+                    type="text"
+                    class="form-control"
+                    id="registerUsername"
+                    placeholder="Enter your username" />
+            </div>
+            <i class="ti-user"></i>
+        {% endif %}
+
+        <div class="form-group">
+            <label for="registerPassword">Password</label>
+            <input
+                name="password"
+                type="password"
+                class="form-control"
+                id="registerPassword"
+                placeholder="Choose a password" />
+            <i class="icon_lock_alt"></i>
+        </div>
+        <div id="pass-info" class="clearfix"></div>
+        <button type="submit" class="btn_1 rounded full-width add_top_30">Register</button>
+        <div class="text-center add_top_10">Already have an acccount? <strong>
+            <a href="/login">Sign In</a></strong>
+        </div>
+        
+
+    {{ form_close() }}
+{% else %}
+    <!-- Registration is disabled. -->
+{% endif %}";s:5:"mtime";i:1606923480;s:6:"markup";s:2029:"{% if canRegister %}
+    <h3 class="mb-5">Register</h3>
+
+    {{ form_ajax('onRegister') }}
+
+        <div class="form-group">
+            <label for="registerName">Full Name</label>
+            <input
+                name="name"
+                type="text"
+                class="form-control"
+                id="registerName"
+                placeholder="Enter your full name" />
+            <i class="ti-user"></i>
+        </div>
+
+        <div class="form-group">
+            <label for="registerEmail">Email</label>
+            <input
+                name="email"
+                type="email"
+                class="form-control"
+                id="registerEmail"
+                placeholder="Enter your email" />
+            <i class="icon_mail_alt"></i>
+        </div>
+
+        {% if loginAttribute == "username" %}
+            <div class="form-group">
+                <label for="registerUsername">Username</label>
+                <input
+                    name="username"
+                    type="text"
+                    class="form-control"
+                    id="registerUsername"
+                    placeholder="Enter your username" />
+            </div>
+            <i class="ti-user"></i>
+        {% endif %}
+
+        <div class="form-group">
+            <label for="registerPassword">Password</label>
+            <input
+                name="password"
+                type="password"
+                class="form-control"
+                id="registerPassword"
+                placeholder="Choose a password" />
+            <i class="icon_lock_alt"></i>
+        </div>
+        <div id="pass-info" class="clearfix"></div>
+        <button type="submit" class="btn_1 rounded full-width add_top_30">Register</button>
+        <div class="text-center add_top_10">Already have an acccount? <strong>
+            <a href="/login">Sign In</a></strong>
+        </div>
+        
+
+    {{ form_close() }}
+{% else %}
+    <!-- Registration is disabled. -->
+{% endif %}";s:4:"code";N;s:5:"title";s:8:"Register";s:3:"url";s:9:"/register";s:6:"layout";s:12:"_auth-layout";s:9:"is_hidden";s:1:"0";s:7:"session";a:1:{s:8:"security";s:3:"all";}s:7:"account";a:3:{s:9:"paramCode";s:4:"code";s:11:"forceSecure";s:1:"0";s:15:"requirePassword";s:1:"0";}}}

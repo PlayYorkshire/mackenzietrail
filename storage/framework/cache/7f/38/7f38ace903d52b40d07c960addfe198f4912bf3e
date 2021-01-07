@@ -1,0 +1,59 @@
+1608730655a:1:{s:21:"global/navigation.htm";a:6:{s:8:"fileName";s:21:"global/navigation.htm";s:7:"content";s:1021:"description = "Main Navigation"
+==
+<nav id="menu" class="main-menu">
+	<ul>
+	    <li><span><a href="/">Home</a></span></li>
+		<li><span><a href="/about-us">The Tour</a></span>
+    		<ul>
+    		    <li><a href="/about-us">About</a></li>
+    	        <li><a href="/about-alister-mackenzie">Alister MacKenzie</a></li>
+    	        <li><a href="/news/">News</a></li>
+    		</ul>
+		</li>
+		<li><span><a href="#">Courses</a></span>
+    		<ul>
+    		    {% partial 'global/courses-nav' %}
+    		</ul>
+		</li>
+		<li><span><a href="/faqs">FAQs</a></span>
+		<li><span><a href="/contact">Get in touch</a></span></li>
+		{% if user %}
+           <li><span><a href="#">My Account</a></span>
+    		<ul>
+    		    <li><a href="/account">View Account</a></li>
+    	        <li class="account"><a data-request="onLogout" data-request-data="redirect: '/'">Sign out</a></li>
+    		</ul>
+		    </li>
+        {% else %}
+            <li><span><a href="/login">Sign In</a></span></li>
+        {% endif %}
+	</ul>
+</nav>";s:5:"mtime";i:1607506186;s:6:"markup";s:986:"<nav id="menu" class="main-menu">
+	<ul>
+	    <li><span><a href="/">Home</a></span></li>
+		<li><span><a href="/about-us">The Tour</a></span>
+    		<ul>
+    		    <li><a href="/about-us">About</a></li>
+    	        <li><a href="/about-alister-mackenzie">Alister MacKenzie</a></li>
+    	        <li><a href="/news/">News</a></li>
+    		</ul>
+		</li>
+		<li><span><a href="#">Courses</a></span>
+    		<ul>
+    		    {% partial 'global/courses-nav' %}
+    		</ul>
+		</li>
+		<li><span><a href="/faqs">FAQs</a></span>
+		<li><span><a href="/contact">Get in touch</a></span></li>
+		{% if user %}
+           <li><span><a href="#">My Account</a></span>
+    		<ul>
+    		    <li><a href="/account">View Account</a></li>
+    	        <li class="account"><a data-request="onLogout" data-request-data="redirect: '/'">Sign out</a></li>
+    		</ul>
+		    </li>
+        {% else %}
+            <li><span><a href="/login">Sign In</a></span></li>
+        {% endif %}
+	</ul>
+</nav>";s:4:"code";N;s:11:"description";s:15:"Main Navigation";}}

@@ -1,0 +1,63 @@
+1608730655a:1:{s:14:"home/posts.htm";a:7:{s:8:"fileName";s:14:"home/posts.htm";s:7:"content";s:1351:"description = "Posts section"
+
+[builderList]
+modelClass = "JakeFeeley\MackenzieTour\Models\Post"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+<div class="bg_color_1">
+    <div class="container margin_80_55">
+        <div class="main_title_2">
+            <span><em></em></span>
+            <h3>Latest News</h3>
+        </div>
+        <div class="row">
+            {% for post in records %}
+            <div class="col-lg-6">
+                <a class="box_news" href="/post/{{ post.id }}">
+                    <figure>
+                        <img src="{{ post.image.path() }}" alt="{{ post.title }}" />
+                        <figcaption><strong>{{ blog.created_at|date('d')}}</strong>{{ post.created_at|date('M')}}</figcaption>
+                    </figure>
+                    <ul>
+                        <li>{{ post.created_at|date('d M Y')}}</li>
+                    </ul>
+                    <h4>{{ post.title }}</h4>
+                    <p class="d-none">{{ str_limit(post.body|raw , 80) }}</p>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+        <p class="btn_home_align"><a href="/blog" class="btn_1 rounded">View all news</a></p>
+    </div>
+</div>";s:5:"mtime";i:1606383892;s:6:"markup";s:1077:"<div class="bg_color_1">
+    <div class="container margin_80_55">
+        <div class="main_title_2">
+            <span><em></em></span>
+            <h3>Latest News</h3>
+        </div>
+        <div class="row">
+            {% for post in records %}
+            <div class="col-lg-6">
+                <a class="box_news" href="/post/{{ post.id }}">
+                    <figure>
+                        <img src="{{ post.image.path() }}" alt="{{ post.title }}" />
+                        <figcaption><strong>{{ blog.created_at|date('d')}}</strong>{{ post.created_at|date('M')}}</figcaption>
+                    </figure>
+                    <ul>
+                        <li>{{ post.created_at|date('d M Y')}}</li>
+                    </ul>
+                    <h4>{{ post.title }}</h4>
+                    <p class="d-none">{{ str_limit(post.body|raw , 80) }}</p>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+        <p class="btn_home_align"><a href="/blog" class="btn_1 rounded">View all news</a></p>
+    </div>
+</div>";s:4:"code";N;s:11:"description";s:13:"Posts section";s:11:"builderList";a:8:{s:10:"modelClass";s:36:"JakeFeeley\MackenzieTour\Models\Post";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:5:"title";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

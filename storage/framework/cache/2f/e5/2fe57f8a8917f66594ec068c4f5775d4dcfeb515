@@ -1,0 +1,83 @@
+1608730655a:1:{s:13:"home/hero.htm";a:7:{s:8:"fileName";s:13:"home/hero.htm";s:7:"content";s:1350:"description = "Banner"
+
+[builderList]
+modelClass = "JakeFeeley\MackenzieTour\Models\Event"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+sortColumn = "date"
+sortDirection = "asc"
+==
+<section class="slider">
+			<div id="slider" class="flexslider">
+				<ul class="slides">
+					{% for item in records %}
+					<li>
+						<img src="{{ item.image.path() }}" alt="">
+						<div class="meta">
+						    <h2 class="upcoming__title">Upcoming Events</h2>
+							<h3>{{ item.name }}</h3>
+							<div class="info">
+								<p><strong>{{ item.date|date('D m Y')}}</strong></p>
+							</div>
+							<!-- <a href="tour-detail.html" class="btn_1">View Event</a> -->
+						</div>
+					</li>
+					{% endfor %}
+				</ul>
+				<div id="icon_drag_mobile"></div>
+			</div>
+			<div id="carousel_slider_wp">
+				<div id="carousel_slider" class="flexslider">
+					<ul class="slides">
+					    {% for item in records %}
+						<li>
+							<img src="{{ item.image.path() }}" alt="">
+							<div class="caption">
+								<h3>{{ item.name }}<span>{{ item.date|date('d F y') }}</span></h3>
+								<small>{{ item.county }}</small>
+							</div>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</section>";s:5:"mtime";i:1607509897;s:6:"markup";s:1040:"<section class="slider">
+			<div id="slider" class="flexslider">
+				<ul class="slides">
+					{% for item in records %}
+					<li>
+						<img src="{{ item.image.path() }}" alt="">
+						<div class="meta">
+						    <h2 class="upcoming__title">Upcoming Events</h2>
+							<h3>{{ item.name }}</h3>
+							<div class="info">
+								<p><strong>{{ item.date|date('D m Y')}}</strong></p>
+							</div>
+							<!-- <a href="tour-detail.html" class="btn_1">View Event</a> -->
+						</div>
+					</li>
+					{% endfor %}
+				</ul>
+				<div id="icon_drag_mobile"></div>
+			</div>
+			<div id="carousel_slider_wp">
+				<div id="carousel_slider" class="flexslider">
+					<ul class="slides">
+					    {% for item in records %}
+						<li>
+							<img src="{{ item.image.path() }}" alt="">
+							<div class="caption">
+								<h3>{{ item.name }}<span>{{ item.date|date('d F y') }}</span></h3>
+								<small>{{ item.county }}</small>
+							</div>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</section>";s:4:"code";N;s:11:"description";s:6:"Banner";s:11:"builderList";a:10:{s:10:"modelClass";s:37:"JakeFeeley\MackenzieTour\Models\Event";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:5:"title";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";s:10:"sortColumn";s:4:"date";s:13:"sortDirection";s:3:"asc";}}}

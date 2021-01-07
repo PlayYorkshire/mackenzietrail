@@ -1,0 +1,57 @@
+title = "Tournaments"
+url = "/account/tournaments"
+layout = "_main-layout"
+is_hidden = 0
+
+[session]
+security = "user"
+redirect = "auth/login"
+
+[builderList]
+modelClass = "JakeFeeley\MackenzieTour\Models\Event"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
+[products]
+filterComponent = "productsFilter"
+setPageTitle = 0
+includeVariants = 1
+includeChildren = 0
+perPage = 9
+paginate = 1
+==
+<section class="hero_in contacts" style="background-image:url('https://pbs.twimg.com/media/EjQ6eEiXkAIjv9I.jpg')">
+	<div class="wrapper">
+		<div class="container">
+			<h1 class="fadeInUp"><span></span>
+			    Upcoming Tournaments
+			</h1>
+			<p class="fadeInUp">Enter into an upcoming tournament</p>
+		</div>
+	</div>
+</section>
+
+<div class="container margin_60_35">
+			<div class="main_title_2">
+				<span><em></em></span>
+				<h2>Choose Your Event</h2>
+			</div>
+			<div class="row">
+			    {% for item in records %}
+				<div class="col-lg-4 col-md-6">
+					<a href="/account/tournaments/{{ item.slug }}" class="box_topic">
+						<span><i class="pe-7s-flag"></i></span>
+						<h3>{{ item.name }}</h3>
+						<p>{{ item.county }}</p>
+						<p><strong>{{ item.date|date('d M Y') }}</strong></p>
+					</a>
+				</div>
+				{% endfor %}
+			</div>
+			<!--/row-->
+		</div>

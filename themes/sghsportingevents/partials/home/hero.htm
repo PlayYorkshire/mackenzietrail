@@ -1,0 +1,49 @@
+description = "Banner"
+
+[builderList]
+modelClass = "JakeFeeley\MackenzieTour\Models\Event"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+sortColumn = "date"
+sortDirection = "asc"
+==
+<section class="slider">
+			<div id="slider" class="flexslider">
+				<ul class="slides">
+					{% for item in records %}
+					<li>
+						<img src="{{ item.image.path() }}" alt="">
+						<div class="meta">
+						    <h2 class="upcoming__title">Upcoming Events</h2>
+							<h3>{{ item.name }}</h3>
+							<div class="info">
+								<p><strong>{{ item.date|date('D m Y')}}</strong></p>
+							</div>
+							<!-- <a href="tour-detail.html" class="btn_1">View Event</a> -->
+						</div>
+					</li>
+					{% endfor %}
+				</ul>
+				<div id="icon_drag_mobile"></div>
+			</div>
+			<div id="carousel_slider_wp">
+				<div id="carousel_slider" class="flexslider">
+					<ul class="slides">
+					    {% for item in records %}
+						<li>
+							<img src="{{ item.image.path() }}" alt="">
+							<div class="caption">
+								<h3>{{ item.name }}<span>{{ item.date|date('d F y') }}</span></h3>
+								<small>{{ item.county }}</small>
+							</div>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</section>

@@ -1,0 +1,19 @@
+plugin:
+    name: 'jakefeeley.mackenzietour::lang.plugin.name'
+    description: 'jakefeeley.mackenzietour::lang.plugin.description'
+    author: 'Jake Feeley'
+    icon: oc-icon-soccer-ball-o
+    homepage: ''
+navigation:
+    menu-item-faqs:
+        label: FAQs
+        url: jakefeeley/mackenzietour/faqs
+        icon: icon-question
+    main-menu-event:
+        label: Events
+        url: jakefeeley/mackenzietour/events
+        icon: icon-flag
+    main-menu-posts:
+        label: Posts
+        url: jakefeeley/mackenzietour/posts
+        icon: icon-newspaper-o

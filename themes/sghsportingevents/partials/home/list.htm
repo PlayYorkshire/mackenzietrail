@@ -1,0 +1,9 @@
+description = "Displays list of tours on hero"
+==
+{% for item in records %}
+    {% if item.is_published == '1' %}
+        <li class="d-inline">
+        	<a href="/experiences/{{ item.slug }}">{{ item.name}}</a>
+        </li> 
+    {% endif %}
+{% endfor %}

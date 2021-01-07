@@ -1,0 +1,210 @@
+description = "Main Layout"
+
+[session]
+security = "all"
+==
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{ this.page.meta_description }}">
+    
+    <title>{{ this.page.title }} | The MacKenzie Trail</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="{{ 'assets/css/bootstrap.min.css'|theme }}" rel="stylesheet">
+    <link href="{{ 'assets/css/style.css'|theme }}" rel="stylesheet">
+	<link href="{{ 'assets/css/vendors.css'|theme }}" rel="stylesheet">
+	
+	{% if this.page.title == 'News' %}
+	    <link href="{{ 'assets/css/blog.css'|theme }}" rel="stylesheet">
+	{% elseif this.page.title == 'Single Blog' %}
+	    <link href="{{ 'assets/css/blog.css'|theme }}" rel="stylesheet">
+	{% elseif this.page.title == 'Membership' %}
+	    <link href="{{ 'assets/css/tables.css'|theme }}" rel="stylesheet">
+	{% elseif this.page.title == 'Tournaments' %}
+	    <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
+	{% endif %}
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="{{ 'assets/css/custom.css'|theme }}" rel="stylesheet">
+	
+	<!-- Modernizr -->
+	<script src="{{ 'assets/js/modernizr.js'|theme }}"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fbfee9e6213c265"></script>
+
+</head>
+
+<body>
+		
+	<div id="page">
+		
+	<header class="header menu_fixed">
+		<div id="logo">
+			<a href="/">
+				<img src="{{ 'assets/images/branding/logo-white.png'|theme }}"  height="36" data-retina="true" alt="" class="logo_normal">
+				<img src="{{ 'assets/images/branding/logo-black.png'|theme }}"  height="36" data-retina="true" alt="" class="logo_sticky">
+			</a>
+		</div>
+		<a href="#menu" class="btn_mobile">
+			<div class="hamburger hamburger--spin" id="hamburger">
+				<div class="hamburger-box">
+					<div class="hamburger-inner"></div>
+				</div>
+			</div>
+		</a>
+		{% partial 'global/navigation' %}
+	</header>
+	<!-- /header -->
+	
+    <!-- main -->
+    <main>
+	
+	{% page %}
+	
+	</main>
+	<!-- /main -->
+
+	<footer>
+		<div class="container margin_60_35">
+			<div class="row">
+				<div class="col-lg-5 col-md-12 p-r-5">
+					<p><img src="{{ 'assets/images/branding/logo-white.png'|theme }}" height="70" data-retina="true" alt=""></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas dui id dictum mattis. Morbi in elit rutrum, porta quam vel, feugiat nulla. Fusce fringilla in nibh ut luctus. Ut vitae justo at leo scelerisque dapibus. In consequat nec enim nec tempor. Nullam tempus diam id felis ullamcorper vestibulum. In lectus enim, porttitor.</p>
+					<div class="follow_us">
+						<ul>
+							<li>Follow us</li>
+							<li><a href="#0"><i class="ti-facebook"></i></a></li>
+							<li><a href="#0"><i class="ti-twitter-alt"></i></a></li>
+							<li><a href="#0"><i class="ti-google"></i></a></li>
+							<li><a href="#0"><i class="ti-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 ml-lg-auto">
+					<h5>Useful links</h5>
+					<ul class="links">
+						<li><a href="/">Home</a></li>
+						<li><a href="/about-us">About</a></li>
+						<li><a href="/tour">The Tour</a></li>
+						<li><a href="/blog">News</a></li>
+						<li><a href="/contact">FAQs</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h5>Contact with Us</h5>
+					<ul class="contacts">
+						<li><a href="tel://61280932400"><i class="ti-mobile"></i> 0800 1 70 70 77</a></li>
+						<li><a href="mailto:info@themackenzietour.co.uk"><i class="ti-email"></i> info@themackenzietour.co.uk</a></li>
+					</ul>
+					<div id="newsletter">
+					<h6>Newsletter</h6>
+					<div id="message-newsletter"></div>
+					<form method="post" action="assets/newsletter.php" name="newsletter_form" id="newsletter_form">
+						<div class="form-group">
+							<input type="email" name="email_newsletter" id="email_newsletter" class="form-control" placeholder="Your email">
+							<input type="submit" value="Submit" id="submit-newsletter">
+						</div>
+					</form>
+					</div>
+				</div>
+			</div>
+			<!--/row-->
+			<hr>
+			<div class="row">
+			    <div class="col-lg-6">
+					<ul id="additional_links text-left">
+						<li><span>© {{ "now"|date("Y") }} MacKenzie Trail</span></li>
+					</ul>
+				</div>
+				<div class="col-lg-6">
+					<ul id="additional_links">
+						<li><a href="#">Terms and conditions</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="/contact">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--/footer-->
+	</div>
+	<!-- page -->
+	
+	<div id="toTop"></div><!-- Back to top button -->
+	
+	<!-- COMMON SCRIPTS -->
+    <script src="{{ 'assets/js/jquery-2.2.4.min.js'|theme }}"></script>
+    <script src="{{ 'assets/js/common_scripts.js'|theme }}"></script>
+    <script src="{{ 'assets/js/main.js'|theme }}"></script>
+	<script src="{{ 'assets/js/validate.js'|theme }}"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.min.js"></script>
+	{% if this.page.title == 'Home' %}
+	<script src="{{ 'assets/js/jquery.flexslider.js'|theme }}"></script>
+	<script>
+		$(window).load(function() {
+			'use strict';
+			$('#carousel_slider').flexslider({
+				animation: "slide",
+				controlNav: false,
+				animationLoop: false,
+				slideshow: false,
+				itemWidth: 280,
+				itemMargin: 25,
+				asNavFor: '#slider'
+			});
+			$('#slider').flexslider({
+				animation: "fade",
+				controlNav: false,
+				animationLoop: false,
+				slideshow: false,
+				sync: "#carousel_slider",
+				start: function(slider) {
+					$('body').removeClass('loading');
+				}
+			});
+		});
+	</script>	
+	{% endif %}
+	
+	{% if this.page.title == 'Experiences' %}
+    	<script src="{{ 'assets/js/isotope.min.js'|theme }}"></script>
+    	<script>
+    	$(window).load(function(){
+    	  var $container = $('.isotope-wrapper');
+    	  $container.isotope({ itemSelector: '.isotope-item', layoutMode: 'masonry', transitionDuration: '0.8s' });
+    	});
+    	$('.filters_listing').on( 'click', 'input', 'change', function(){
+    	  var selector = $(this).attr('data-filter');
+    	  $('.isotope-wrapper').isotope({ filter: selector });
+    	});
+    	</script>
+    {% endif %}
+    
+    {% if this.page.title == 'Get in touch' %}
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script src="{{ 'assets/js/mapmarker.jquery.js'|theme }}"></script>
+	    <script src="{{ 'assets/js/mapmarker_func.jquery.js'|theme }}"></script>
+	{% endif %}
+	
+	{% if this.page.title == 'Membership' %}
+        <script src="{{ 'assets/js/tables_func.js'|theme }}"></script>
+	{% endif %}
+	
+	{% framework %}
+
+</body>
+</html>

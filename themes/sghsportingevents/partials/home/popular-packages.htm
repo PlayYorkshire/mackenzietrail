@@ -1,0 +1,41 @@
+description = "Popular Packages"
+==
+<div class="container container-custom margin_80_0">
+    <div class="main_title_2">
+        <span><em></em></span>
+        <h2>Popular Packages</h2>
+    </div>
+    <div id="reccomended" class="owl-carousel owl-theme">
+        {% for package in records%}
+        {% if package.is_published == '1' %}
+            <div class="item">
+                <div class="box_grid">
+                    <figure>
+                        <a href="/experiences/{{ package.tour.slug }}/{{ package.slug }}">
+                            <img src="{{ package.image.path() }}" class="img-fluid" alt="" width="800" height="533" />
+                            <div class="read_more">
+                                <span>View Package</span>
+                            </div>
+                        </a>
+                        <small>{{ package.tour.name }}</small>
+                    </figure>
+                    <div class="wrapper">
+                        <h3><a href="/experiences/{{ package.tour.slug }}/{{ package.slug }}">{{ package.name }}</a></h3>
+                        <p> {{ str_limit(package.description|raw , 90) }}</p>
+                        <span class="price">From <strong>£{{ package.price }}</strong> per person</span><br>
+                        <span class="occupancy">Based on {{ package.occupancy }} occupancy</span>
+                    </div>
+                    <ul>
+                        <li><i class="icon_calendar"></i> {{ package.start_date|date('d')}} - {{ package.end_date|date('d  M Y')}}</li>
+                        <li>
+                            <img src="{{ package.tour.image.path() }}" class="tour-logo">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    <p class="btn_home_align"><a href="/experiences" class="btn_1 rounded">View all packages</a></p>
+    <hr class="large" />
+</div>

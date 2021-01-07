@@ -1,0 +1,86 @@
+1608730655a:1:{s:20:"auth/tournaments.htm";a:12:{s:8:"fileName";s:20:"auth/tournaments.htm";s:7:"content";s:1409:"title = "Tournaments"
+url = "/account/tournaments"
+layout = "_main-layout"
+is_hidden = 0
+
+[session]
+security = "user"
+redirect = "auth/login"
+
+[builderList]
+modelClass = "JakeFeeley\MackenzieTour\Models\Event"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
+[products]
+filterComponent = "productsFilter"
+setPageTitle = 0
+includeVariants = 1
+includeChildren = 0
+perPage = 9
+paginate = 1
+==
+<section class="hero_in contacts" style="background-image:url('https://pbs.twimg.com/media/EjQ6eEiXkAIjv9I.jpg')">
+	<div class="wrapper">
+		<div class="container">
+			<h1 class="fadeInUp"><span></span>
+			    Upcoming Tournaments
+			</h1>
+			<p class="fadeInUp">Enter into an upcoming tournament</p>
+		</div>
+	</div>
+</section>
+
+<div class="container margin_60_35">
+			<div class="main_title_2">
+				<span><em></em></span>
+				<h2>Choose Your Event</h2>
+			</div>
+			<div class="row">
+			    {% for item in records %}
+				<div class="col-lg-4 col-md-6">
+					<a href="/account/tournaments/{{ item.slug }}" class="box_topic">
+						<span><i class="pe-7s-flag"></i></span>
+						<h3>{{ item.name }}</h3>
+						<p>{{ item.county }}</p>
+						<p><strong>{{ item.date|date('d M Y') }}</strong></p>
+					</a>
+				</div>
+				{% endfor %}
+			</div>
+			<!--/row-->
+		</div>";s:5:"mtime";i:1608716314;s:6:"markup";s:893:"<section class="hero_in contacts" style="background-image:url('https://pbs.twimg.com/media/EjQ6eEiXkAIjv9I.jpg')">
+	<div class="wrapper">
+		<div class="container">
+			<h1 class="fadeInUp"><span></span>
+			    Upcoming Tournaments
+			</h1>
+			<p class="fadeInUp">Enter into an upcoming tournament</p>
+		</div>
+	</div>
+</section>
+
+<div class="container margin_60_35">
+			<div class="main_title_2">
+				<span><em></em></span>
+				<h2>Choose Your Event</h2>
+			</div>
+			<div class="row">
+			    {% for item in records %}
+				<div class="col-lg-4 col-md-6">
+					<a href="/account/tournaments/{{ item.slug }}" class="box_topic">
+						<span><i class="pe-7s-flag"></i></span>
+						<h3>{{ item.name }}</h3>
+						<p>{{ item.county }}</p>
+						<p><strong>{{ item.date|date('d M Y') }}</strong></p>
+					</a>
+				</div>
+				{% endfor %}
+			</div>
+			<!--/row-->
+		</div>";s:4:"code";N;s:5:"title";s:11:"Tournaments";s:3:"url";s:20:"/account/tournaments";s:6:"layout";s:12:"_main-layout";s:9:"is_hidden";s:1:"0";s:7:"session";a:2:{s:8:"security";s:4:"user";s:8:"redirect";s:10:"auth/login";}s:11:"builderList";a:8:{s:10:"modelClass";s:37:"JakeFeeley\MackenzieTour\Models\Event";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:5:"title";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}s:8:"products";a:6:{s:15:"filterComponent";s:14:"productsFilter";s:12:"setPageTitle";s:1:"0";s:15:"includeVariants";s:1:"1";s:15:"includeChildren";s:1:"0";s:7:"perPage";s:1:"9";s:8:"paginate";s:1:"1";}}}

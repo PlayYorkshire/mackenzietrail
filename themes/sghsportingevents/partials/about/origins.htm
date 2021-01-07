@@ -1,0 +1,65 @@
+description = "Origins & Story"
+
+[builderList]
+modelClass = "JakeFeeley\MackenzieTour\Models\Event"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+<div class="bg_color_1">
+	<div class="container margin_80_55">
+		<div class="main_title_2">
+			<span><em></em></span>
+			<h2>The Dr Alister MacKenzie Tour</h2>
+			<p>Showcasing the best courses in Yorkshire</p>
+		</div>
+		<div class="row justify-content-between">
+			<div class="col-lg-12">
+				    <p><strong>The pot of gold at the end of the MacKenzie Trail Series rainbow is a trip for the winning pair to the 2022 Masters, with the prize to be presented by the 1992 champion Ian Woosnam.The prize package includes flights, accommodation for 4 nights based on twin sharing, car hire, two rounds of golf and tickets to the Masters on the climatic final day.</strong></p>
+                    <p>One of MacKenzie’s fundamental principles as an architect was to build courses for the most enjoyment for the greatest number. He believed each golfer should be tested without finding the course an impossible challenge, and we have selected some of his hidden gems to host five qualifying events.</p>
+                    <p>The format is a pairs better ball stableford played off 90% of handicap with a maximum of 50 pairs available to play at each of five qualifying events.</p>
+                    <p>The top five pairs from each of the five qualifying events will qualify for the final which will be played at Ilkley Golf Club just before the Ian Woosnam Senior Invitational in September, giving finalists a unique  opportunity to experience professional  tournament conditions. </p>
+                    <p>Golf and prizes for the final at Ilkley will be provided free and the only other expense that finalists will have to cover is the purchase of food and drink on the day. </p>
+                    <p>Prizes will also be awarded to the top three pairs at each of the five qualifying events.</p>
+                    <p>The cost to enter each of the qualifying events is £200 per pair which includes 18 holes of golf on the day, prizes and a MacKenzie Series logoed shirt for each competitor. </p>
+
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container container-custom margin_80">
+    <div class="main_title_2">
+        <span><em></em></span>
+        <h2>Upcoming Events</h2>
+    </div>
+    <div id="reccomended" class="owl-carousel owl-theme">
+        {% for item in records %}
+            <div class="item">
+                <div class="box_grid">
+                    <figure>
+                        <a href="/experiences/{{ package.tour.slug }}/{{ package.slug }}">
+                            <img src="{{ item.image.path() }}" class="img-fluid" alt=""/>
+                            <div class="read_more">
+                                <span>View Event</span>
+                            </div>
+                        </a>
+                        <small>The MacKenzie Trail</small>
+                    </figure>
+                    <div class="wrapper">
+                        <h3><a href="/experiences/{{ package.tour.slug }}/{{ package.slug }}">{{ item.name }}</a></h3>
+                        <p> {{ str_limit(item.description|raw , 90) }}</p>
+                    </div>
+                    <ul>
+                        <li><i class="icon_calendar"></i> {{ item.date|date('d  M Y')}}</li>
+                        <li>
+                    </ul>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <p class="btn_home_align"><a href="/experiences" class=""></a></p>
+</div>

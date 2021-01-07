@@ -1,0 +1,121 @@
+1608730655a:1:{s:16:"auth/profile.htm";a:11:{s:8:"fileName";s:16:"auth/profile.htm";s:7:"content";s:2403:"title = "Edit Profile"
+url = "/account/profile"
+layout = "_main-layout"
+is_hidden = 0
+
+[session]
+security = "user"
+redirect = "auth/login"
+
+[account]
+paramCode = "code"
+forceSecure = 0
+requirePassword = 0
+==
+<section class="hero_in contacts" style="background-image:url('https://pbs.twimg.com/media/EjQ6eEiXkAIjv9I.jpg')">
+	<div class="wrapper">
+		<div class="container">
+			<h1 class="fadeInUp"><span></span>
+			    Edit Profile
+			</h1>
+			<p class="fadeInUp">Update your player profile</p>
+		</div>
+	</div>
+</section>
+
+<div class="container margin_60_35">
+  <div class="main_title_2">
+    <span><em></em></span>
+    <h2>Edit your profile details below</h2>
+  </div>
+  <div class="row">
+    <div class="col-lg-6 offset-lg-3 col-md-6">
+        {{ form_ajax('onUpdate') }}
+
+            <div class="form-group">
+                <label for="accountName">Full Name</label>
+                <input name="name" type="text" class="form-control" id="accountName" value="{{ user.name }}">
+            </div>
+        
+            <div class="form-group">
+                <label for="accountEmail">Email</label>
+                <input name="email" type="email" class="form-control" id="accountEmail" value="{{ user.email }}">
+            </div>
+        
+            <div class="form-group">
+                <label for="accountPassword">New Password</label>
+                <input name="password" type="password" class="form-control" id="accountPassword">
+            </div>
+        
+            <div class="form-group">
+                <label for="accountPasswordConfirm">Confirm New Password</label>
+                <input name="password_confirmation" type="password" class="form-control" id="accountPasswordConfirm">
+            </div>
+        
+            {% if updateRequiresPassword %}
+                <p>To change these details, please confirm your current password.</p>
+                <div class="form-group">
+                    <label for="accountPasswordCurrent">Current Password <small class="text-danger">* required</small></label>
+                    <input name="password_current" type="password" class="form-control" id="accountPasswordCurrent">
+                </div>
+            {% endif %}
+        
+            <button type="submit" class="btn_1 rounded full-width">Save</button>
+        
+        {{ form_close() }}
+    </div>
+  </div>
+</div>";s:5:"mtime";i:1606923048;s:6:"markup";s:2195:"<section class="hero_in contacts" style="background-image:url('https://pbs.twimg.com/media/EjQ6eEiXkAIjv9I.jpg')">
+	<div class="wrapper">
+		<div class="container">
+			<h1 class="fadeInUp"><span></span>
+			    Edit Profile
+			</h1>
+			<p class="fadeInUp">Update your player profile</p>
+		</div>
+	</div>
+</section>
+
+<div class="container margin_60_35">
+  <div class="main_title_2">
+    <span><em></em></span>
+    <h2>Edit your profile details below</h2>
+  </div>
+  <div class="row">
+    <div class="col-lg-6 offset-lg-3 col-md-6">
+        {{ form_ajax('onUpdate') }}
+
+            <div class="form-group">
+                <label for="accountName">Full Name</label>
+                <input name="name" type="text" class="form-control" id="accountName" value="{{ user.name }}">
+            </div>
+        
+            <div class="form-group">
+                <label for="accountEmail">Email</label>
+                <input name="email" type="email" class="form-control" id="accountEmail" value="{{ user.email }}">
+            </div>
+        
+            <div class="form-group">
+                <label for="accountPassword">New Password</label>
+                <input name="password" type="password" class="form-control" id="accountPassword">
+            </div>
+        
+            <div class="form-group">
+                <label for="accountPasswordConfirm">Confirm New Password</label>
+                <input name="password_confirmation" type="password" class="form-control" id="accountPasswordConfirm">
+            </div>
+        
+            {% if updateRequiresPassword %}
+                <p>To change these details, please confirm your current password.</p>
+                <div class="form-group">
+                    <label for="accountPasswordCurrent">Current Password <small class="text-danger">* required</small></label>
+                    <input name="password_current" type="password" class="form-control" id="accountPasswordCurrent">
+                </div>
+            {% endif %}
+        
+            <button type="submit" class="btn_1 rounded full-width">Save</button>
+        
+        {{ form_close() }}
+    </div>
+  </div>
+</div>";s:4:"code";N;s:5:"title";s:12:"Edit Profile";s:3:"url";s:16:"/account/profile";s:6:"layout";s:12:"_main-layout";s:9:"is_hidden";s:1:"0";s:7:"session";a:2:{s:8:"security";s:4:"user";s:8:"redirect";s:10:"auth/login";}s:7:"account";a:3:{s:9:"paramCode";s:4:"code";s:11:"forceSecure";s:1:"0";s:15:"requirePassword";s:1:"0";}}}

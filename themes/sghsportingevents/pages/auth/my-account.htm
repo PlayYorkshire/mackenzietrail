@@ -1,0 +1,47 @@
+title = "My Account"
+url = "/account"
+layout = "_main-layout"
+is_hidden = 0
+==
+<section class="hero_in contacts" style="background-image:url('https://pbs.twimg.com/media/EjQ6eEiXkAIjv9I.jpg')">
+  <div class="wrapper">
+    <div class="container">
+      <h1 class="fadeInUp"><span></span>
+        {% if user %}
+        Welcome {{ user.name }}
+        {% endif %}
+      </h1>
+      <p class="fadeInUp">Your Account</p>
+    </div>
+  </div>
+</section>
+<div class="container margin_60_35">
+  <div class="main_title_2">
+    <span><em></em></span>
+    <h2>Get Started</h2>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-md-6">
+      <a class="box_topic" href="/account/profile">
+        <span><i class="pe-7s-wallet"></i></span>
+        <h3>Account Details</h3>
+        <p>View and update your personal details</p>
+      </a>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <a class="box_topic" href="/account/tournaments">
+        <i class="pe-7s-users"></i>
+        <h3>Tournaments</h3>
+        <p>View and enter into availble tournaments </p>
+      </a>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <a class="box_topic" href="/faqs">
+        <i class="pe-7s-help2"></i>
+        <h3>FAQS</h3>
+        <p>Need help? View our FAQs</p>
+      </a>
+    </div>
+  </div>
+  <!--/row-->
+</div>

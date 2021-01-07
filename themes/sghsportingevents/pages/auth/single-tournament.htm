@@ -1,0 +1,34 @@
+title = "Single Tournament"
+url = "/account/tournaments/:slug"
+layout = "_main-layout"
+is_hidden = 0
+
+[session]
+security = "user"
+redirect = "auth/login"
+
+[builderDetails]
+modelClass = "JakeFeeley\MackenzieTour\Models\Event"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "name"
+displayColumn = "id"
+notFoundMessage = "Record not found"
+
+[products]
+filterComponent = "productsFilter"
+setPageTitle = 0
+includeVariants = 1
+includeChildren = 0
+perPage = 9
+paginate = 1
+==
+<section class="hero_in contacts" style="background-image:url('https://pbs.twimg.com/media/EjQ6eEiXkAIjv9I.jpg')">
+	<div class="wrapper">
+		<div class="container">
+			<h1 class="fadeInUp"><span></span>
+			    {{ record.name }}
+			</h1>
+			<p class="fadeInUp">Fill out the form below to enter</p>
+		</div>
+	</div>
+</section>

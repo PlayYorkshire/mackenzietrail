@@ -1,0 +1,10 @@
+name: Posts
+form: $/jakefeeley/mackenzietour/models/post/fields.yaml
+modelClass: JakeFeeley\MackenzieTour\Models\Post
+defaultRedirect: jakefeeley/mackenzietour/posts
+create:
+    redirect: 'jakefeeley/mackenzietour/posts/update/:id'
+    redirectClose: jakefeeley/mackenzietour/posts
+update:
+    redirect: jakefeeley/mackenzietour/posts
+    redirectClose: jakefeeley/mackenzietour/posts

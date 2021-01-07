@@ -1,0 +1,90 @@
+1608730655a:1:{s:8:"faqs.htm";a:10:{s:8:"fileName";s:8:"faqs.htm";s:7:"content";s:1434:"title = "FAQs"
+url = "/faqs"
+layout = "_main-layout"
+is_hidden = 0
+
+[builderList]
+modelClass = "JakeFeeley\MackenzieTour\Models\Faq"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+<section class="hero_in general">
+			<div class="wrapper">
+				<div class="container">
+					<h1 class="fadeInUp"><span></span>Tour FAQs</h1>
+				</div>
+			</div>
+		</section>
+		<!--/hero_in-->
+
+		<div class="container margin_60_35">
+			<div class="row">
+				
+				<div class="col-lg-12" id="faq">
+					<div role="tablist" class="add_bottom_45 accordion_2" id="payment">
+					    {% for item in records %}
+    						<div class="card mb-4">
+    							<div class="card-header" role="tab">
+    								<h5 class="mb-0">
+    									<a data-toggle="collapse" href="#{{ item.id }}" aria-expanded="true"><i class="indicator ti-minus"></i>{{ item.title }}</a>
+    								</h5>
+    							</div>
+    
+    							<div id="{{ item.id }}" class="collapse show" role="tabpanel" data-parent="#payment">
+    								<div class="card-body">
+    									{{ item.body|raw }}
+    								</div>
+    							</div>
+    						</div>
+    						<!-- /card -->
+						{% endfor %}
+					</div>
+					<!-- /accordion payment -->
+				</div>
+				<!-- /col -->
+			</div>
+			<!-- /row -->
+		</div>
+		<!--/container-->";s:5:"mtime";i:1607510378;s:6:"markup";s:1124:"<section class="hero_in general">
+			<div class="wrapper">
+				<div class="container">
+					<h1 class="fadeInUp"><span></span>Tour FAQs</h1>
+				</div>
+			</div>
+		</section>
+		<!--/hero_in-->
+
+		<div class="container margin_60_35">
+			<div class="row">
+				
+				<div class="col-lg-12" id="faq">
+					<div role="tablist" class="add_bottom_45 accordion_2" id="payment">
+					    {% for item in records %}
+    						<div class="card mb-4">
+    							<div class="card-header" role="tab">
+    								<h5 class="mb-0">
+    									<a data-toggle="collapse" href="#{{ item.id }}" aria-expanded="true"><i class="indicator ti-minus"></i>{{ item.title }}</a>
+    								</h5>
+    							</div>
+    
+    							<div id="{{ item.id }}" class="collapse show" role="tabpanel" data-parent="#payment">
+    								<div class="card-body">
+    									{{ item.body|raw }}
+    								</div>
+    							</div>
+    						</div>
+    						<!-- /card -->
+						{% endfor %}
+					</div>
+					<!-- /accordion payment -->
+				</div>
+				<!-- /col -->
+			</div>
+			<!-- /row -->
+		</div>
+		<!--/container-->";s:4:"code";N;s:5:"title";s:4:"FAQs";s:3:"url";s:5:"/faqs";s:6:"layout";s:12:"_main-layout";s:9:"is_hidden";s:1:"0";s:11:"builderList";a:8:{s:10:"modelClass";s:35:"JakeFeeley\MackenzieTour\Models\Faq";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:5:"title";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

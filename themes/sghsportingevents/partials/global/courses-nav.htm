@@ -1,0 +1,13 @@
+[builderList builderList2]
+modelClass = "JakeFeeley\MackenzieTour\Models\Event"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% for item in records %}
+    <li><a href="/course/{{ item.slug }}">{{ item.name }}</a></li>
+{% endfor %}

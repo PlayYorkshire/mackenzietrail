@@ -1,0 +1,394 @@
+1608730655a:1:{s:14:"membership.htm";a:9:{s:8:"fileName";s:14:"membership.htm";s:7:"content";s:6184:"title = "Membership"
+url = "/membership"
+layout = "_main-layout"
+is_hidden = 0
+==
+<section class="hero_in contacts" style="background-image:url('https://pbs.twimg.com/media/EjQ6eEiXkAIjv9I.jpg')">
+	<div class="wrapper">
+		<div class="container">
+			<h1 class="fadeInUp"><span></span>Become a Member</h1>
+		</div>
+	</div>
+</section>
+<div class="container margin_60_35">
+		<div class="pricing-container cd-has-margins">
+		<div class="pricing-switcher">
+			<p class="fieldset">
+				<input type="radio" name="duration-2" value="monthly" id="monthly-2" checked>
+				<label for="monthly-2">Monthly</label>
+				<input type="radio" name="duration-2" value="yearly" id="yearly-2">
+				<label for="yearly-2">Yearly</label>
+				<span class="switch"></span>
+			</p>
+		</div>
+		<!--/pricing-switcher -->
+		<ul class="pricing-list bounce-invert">
+			<li>
+				<ul class="pricing-wrapper">
+					<li data-type="monthly" class="is-visible">
+						<header class="pricing-header">
+							<h2>Basic</h2>
+
+							<div class="price">
+								<span class="currency">$</span>
+								<span class="price-value">30</span>
+								<span class="price-duration">mo</span>
+							</div>
+						</header>
+						<!-- /pricing-header -->
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+							</ul>
+						</div>
+						<!-- /pricing-body -->
+						<footer class="pricing-footer">
+							<a class="select-plan" href="/register">Select</a>
+						</footer>
+					</li>
+					<li data-type="yearly" class="is-hidden">
+						<header class="pricing-header">
+							<h2>Basic</h2>
+
+							<div class="price">
+								<span class="currency">$</span>
+								<span class="price-value">320</span>
+								<span class="price-duration">yr</span>
+							</div>
+						</header>
+						<!-- /pricing-header -->
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+							</ul>
+						</div> 
+						<!-- /pricing-body -->
+						<footer class="pricing-footer">
+							<a class="select-plan" href="/register">Select</a>
+						</footer>
+					</li>
+				</ul>
+				<!-- /pricing-wrapper -->
+			</li>
+			<li class="popular">
+				<ul class="pricing-wrapper">
+					<li data-type="monthly" class="is-visible">
+						<header class="pricing-header">
+							<h2>Popular</h2>
+							<div class="price">
+								<span class="currency">£</span>
+								<span class="price-value">60</span>
+								<span class="price-duration">mo</span>
+							</div>
+						</header>
+						<!-- /pricing-header -->
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+							</ul>
+						</div>
+						<!-- /pricing-body -->
+						<footer class="pricing-footer">
+							<a class="select-plan" href="#0">Select</a>
+						</footer>
+					</li>
+					<li data-type="yearly" class="is-hidden">
+						<header class="pricing-header">
+							<h2>Popular</h2>
+
+							<div class="price">
+								<span class="currency">£</span>
+								<span class="price-value">630</span>
+								<span class="price-duration">yr</span>
+							</div>
+						</header>
+						<!-- /pricing-header -->
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+							</ul>
+						</div>
+						<!-- /pricing-body -->
+						<footer class="pricing-footer">
+							<a class="select-plan" href="/register">Select</a>
+						</footer>
+					</li>
+				</ul>
+				<!-- /cd-pricing-wrapper -->
+			</li>
+			<li>
+				<ul class="pricing-wrapper">
+					<li data-type="monthly" class="is-visible">
+						<header class="pricing-header">
+							<h2>Premier</h2>
+							<div class="price">
+								<span class="currency">£</span>
+								<span class="price-value">90</span>
+								<span class="price-duration">mo</span>
+							</div>
+						</header>
+						<!-- /pricing-header -->
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+							</ul>
+						</div>
+						<!-- /pricing-body -->
+						<footer class="pricing-footer">
+							<a class="select-plan" href="#0">Select</a>
+						</footer>
+					</li>
+					<li data-type="yearly" class="is-hidden">
+						<header class="pricing-header">
+							<h2>Premier</h2>
+
+							<div class="price">
+								<span class="currency">£</span>
+								<span class="price-value">950</span>
+								<span class="price-duration">yr</span>
+							</div>
+						</header>
+						<!-- /pricing-header -->
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<li><em>One Time</em> Fee</li>
+								<li><em>5</em> User</li>
+								<li><em>Lifetime</em> Availability</li>
+								<li><em>Non</em> Featured</li>
+								<li><em>30 days</em> Listing</li>
+								<li><em>24/7</em> Support</li>
+							</ul>
+						</div>
+						<!-- /pricing-body -->
+						<footer class="pricing-footer">
+							<a class="select-plan" href="#0">Select</a>
+						</footer>
+					</li>
+				</ul>
+				<!-- /pricing-wrapper -->
+			</li>
+		</ul>
+		<!-- /pricing-list -->
+	</div>
+	<!-- /pricing-container -->	
+	</div>
+	<!-- /container -->";s:5:"mtime";i:1606385912;s:6:"markup";s:6102:"<section class="hero_in contacts" style="background-image:url('https://pbs.twimg.com/media/EjQ6eEiXkAIjv9I.jpg')">
+	<div class="wrapper">
+		<div class="container">
+			<h1 class="fadeInUp"><span></span>Become a Member</h1>
+		</div>
+	</div>
+</section>
+<div class="container margin_60_35">
+		<div class="pricing-container cd-has-margins">
+		<div class="pricing-switcher">
+			<p class="fieldset">
+				<input type="radio" name="duration-2" value="monthly" id="monthly-2" checked>
+				<label for="monthly-2">Monthly</label>
+				<input type="radio" name="duration-2" value="yearly" id="yearly-2">
+				<label for="yearly-2">Yearly</label>
+				<span class="switch"></span>
+			</p>
+		</div>
+		<!--/pricing-switcher -->
+		<ul class="pricing-list bounce-invert">
+			<li>
+				<ul class="pricing-wrapper">
+					<li data-type="monthly" class="is-visible">
+						<header class="pricing-header">
+							<h2>Basic</h2>
+
+							<div class="price">
+								<span class="currency">$</span>
+								<span class="price-value">30</span>
+								<span class="price-duration">mo</span>
+							</div>
+						</header>
+						<!-- /pricing-header -->
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+							</ul>
+						</div>
+						<!-- /pricing-body -->
+						<footer class="pricing-footer">
+							<a class="select-plan" href="/register">Select</a>
+						</footer>
+					</li>
+					<li data-type="yearly" class="is-hidden">
+						<header class="pricing-header">
+							<h2>Basic</h2>
+
+							<div class="price">
+								<span class="currency">$</span>
+								<span class="price-value">320</span>
+								<span class="price-duration">yr</span>
+							</div>
+						</header>
+						<!-- /pricing-header -->
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+							</ul>
+						</div> 
+						<!-- /pricing-body -->
+						<footer class="pricing-footer">
+							<a class="select-plan" href="/register">Select</a>
+						</footer>
+					</li>
+				</ul>
+				<!-- /pricing-wrapper -->
+			</li>
+			<li class="popular">
+				<ul class="pricing-wrapper">
+					<li data-type="monthly" class="is-visible">
+						<header class="pricing-header">
+							<h2>Popular</h2>
+							<div class="price">
+								<span class="currency">£</span>
+								<span class="price-value">60</span>
+								<span class="price-duration">mo</span>
+							</div>
+						</header>
+						<!-- /pricing-header -->
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+							</ul>
+						</div>
+						<!-- /pricing-body -->
+						<footer class="pricing-footer">
+							<a class="select-plan" href="#0">Select</a>
+						</footer>
+					</li>
+					<li data-type="yearly" class="is-hidden">
+						<header class="pricing-header">
+							<h2>Popular</h2>
+
+							<div class="price">
+								<span class="currency">£</span>
+								<span class="price-value">630</span>
+								<span class="price-duration">yr</span>
+							</div>
+						</header>
+						<!-- /pricing-header -->
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+							</ul>
+						</div>
+						<!-- /pricing-body -->
+						<footer class="pricing-footer">
+							<a class="select-plan" href="/register">Select</a>
+						</footer>
+					</li>
+				</ul>
+				<!-- /cd-pricing-wrapper -->
+			</li>
+			<li>
+				<ul class="pricing-wrapper">
+					<li data-type="monthly" class="is-visible">
+						<header class="pricing-header">
+							<h2>Premier</h2>
+							<div class="price">
+								<span class="currency">£</span>
+								<span class="price-value">90</span>
+								<span class="price-duration">mo</span>
+							</div>
+						</header>
+						<!-- /pricing-header -->
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+								<li><em>Item</em> Name</li>
+							</ul>
+						</div>
+						<!-- /pricing-body -->
+						<footer class="pricing-footer">
+							<a class="select-plan" href="#0">Select</a>
+						</footer>
+					</li>
+					<li data-type="yearly" class="is-hidden">
+						<header class="pricing-header">
+							<h2>Premier</h2>
+
+							<div class="price">
+								<span class="currency">£</span>
+								<span class="price-value">950</span>
+								<span class="price-duration">yr</span>
+							</div>
+						</header>
+						<!-- /pricing-header -->
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<li><em>One Time</em> Fee</li>
+								<li><em>5</em> User</li>
+								<li><em>Lifetime</em> Availability</li>
+								<li><em>Non</em> Featured</li>
+								<li><em>30 days</em> Listing</li>
+								<li><em>24/7</em> Support</li>
+							</ul>
+						</div>
+						<!-- /pricing-body -->
+						<footer class="pricing-footer">
+							<a class="select-plan" href="#0">Select</a>
+						</footer>
+					</li>
+				</ul>
+				<!-- /pricing-wrapper -->
+			</li>
+		</ul>
+		<!-- /pricing-list -->
+	</div>
+	<!-- /pricing-container -->	
+	</div>
+	<!-- /container -->";s:4:"code";N;s:5:"title";s:10:"Membership";s:3:"url";s:11:"/membership";s:6:"layout";s:12:"_main-layout";s:9:"is_hidden";s:1:"0";}}

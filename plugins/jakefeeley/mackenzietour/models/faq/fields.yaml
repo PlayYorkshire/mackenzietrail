@@ -1,0 +1,10 @@
+fields:
+    title:
+        label: Question
+        span: full
+        type: text
+    body:
+        label: Answer
+        span: full
+        size: large
+        type: richeditor

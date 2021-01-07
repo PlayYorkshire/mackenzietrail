@@ -1,0 +1,44 @@
+fields:
+    name:
+        label: Name
+        span: left
+        type: text
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    date:
+        label: Date
+        span: auto
+        mode: date
+        type: datepicker
+    price:
+        label: Price
+        span: auto
+        type: text
+tabs:
+    fields:
+        image:
+            label: Image
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: full
+            type: fileupload
+            tab: Media
+        body:
+            label: Body
+            size: ''
+            span: full
+            type: richeditor
+            tab: Media
+        county:
+            label: County
+            span: full
+            type: text
+            tab: Address

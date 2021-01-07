@@ -1,0 +1,44 @@
+description = "loop for posts"
+
+[builderList]
+modelClass = "JakeFeeley\MackenzieTour\Models\Post"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "id"
+noRecordsMessage = "No posts found"
+detailsPage = "-"
+detailsKeyColumn = "title"
+detailsUrlParameter = "slug"
+pageNumber = "{{ :page }}"
+==
+{% for post in records %}
+
+<article class="blog wow fadeIn">
+	<div class="row no-gutters">
+		<div class="col-lg-6">
+			<figure>
+				<a href="/post/{{ post.id }}">
+				    <img src="{{ post.image.path() }}" alt="">
+					<div class="preview"><span>Read more</span></div>
+				</a>
+			</figure>
+		</div>
+		<div class="col-lg-6">
+			<div class="post_info">
+				<small>{{ post.created_at|date('d M Y') }}</small>
+				<h3><a href="/post/{{ post.id }}">{{ str_limit(post.title|raw , 70) }}</a></h3>
+				<p>{{ str_limit(post.body|raw , 310) }}</p>
+				<ul>
+					<li>
+						<div class="thumb">
+						    <img src="{{ post.author.image.path() }}" alt="">
+						</div> {{ post.author.name }}
+					</li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</article>
+
+{% endfor %}

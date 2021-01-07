@@ -1,0 +1,10 @@
+name: Events
+form: $/jakefeeley/mackenzietour/models/event/fields.yaml
+modelClass: JakeFeeley\MackenzieTour\Models\Event
+defaultRedirect: jakefeeley/mackenzietour/events
+create:
+    redirect: 'jakefeeley/mackenzietour/events/update/:id'
+    redirectClose: jakefeeley/mackenzietour/events
+update:
+    redirect: jakefeeley/mackenzietour/events
+    redirectClose: jakefeeley/mackenzietour/events
